@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>IELTS Reading: Bike-sharing Schemes | Full Vocabulary & IELTS Questions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --bg-body: #f0f4fa; --text-primary: #1a2c3e; --b1-color: #e6b422; --b2-color: #2c9c6e; --c1-color: #d45c8c; --c2-color: #9b59b6; --shadow-sm: 0 12px 30px rgba(0, 0, 0, 0.05); --radius-xl: 28px; --radius-lg: 20px; }
+        body { font-family: 'Inter', sans-serif; background: linear-gradient(145deg, #eef2f9 0%, #e2eaf5 100%); height: 100vh; overflow: hidden; font-size: 0.8rem; }
+        .dashboard { display: flex; height: 100%; width: 100%; }
+        .reading-section { width: 55%; background: rgba(255, 255, 255, 0.96); overflow-y: auto; padding: 1.4rem 1.8rem; border-radius: 0 var(--radius-xl) var(--radius-xl) 0; box-shadow: 10px 0 30px -10px rgba(0, 0, 0, 0.08); border-right: 1px solid rgba(0, 0, 0, 0.05); }
+        .quiz-section { width: 45%; background: #f9fbfd; overflow-y: auto; padding: 1.4rem 1.3rem; border-left: 1px solid rgba(0, 0, 0, 0.05); }
+        .reading-section::-webkit-scrollbar, .quiz-section::-webkit-scrollbar { width: 6px; }
+        .reading-section::-webkit-scrollbar-track { background: #e9ecef; border-radius: 10px; }
+        .reading-section::-webkit-scrollbar-thumb { background: #b9c4cf; border-radius: 10px; }
+        h1 { font-family: 'Merriweather', serif; font-size: 1.5rem; font-weight: 700; background: linear-gradient(135deg, #1f3b4c, #2c5a6e); background-clip: text; -webkit-background-clip: text; color: transparent; margin-bottom: 0.2rem; }
+        .brand-link { display: inline-flex; align-items: center; gap: 8px; background: #f1f5f9; padding: 4px 12px; border-radius: 60px; font-weight: 500; font-size: 0.7rem; color: #1e5f7a; text-decoration: none; transition: 0.2s; margin-bottom: 0.8rem; }
+        .brand-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 0.3rem 0 0.8rem; }
+        p { font-family: 'Merriweather', serif; font-size: 0.75rem; line-height: 1.55; color: #1f2f3c; margin-bottom: 0.9rem; text-align: justify; }
+        
+        /* QUIZ STYLES */
+        .quiz-card { background: white; border-radius: 18px; margin-bottom: 18px; padding: 0.9rem 1.1rem; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.02); border: 1px solid #eef2f8; }
+        .section-title { font-weight: 700; font-size: 0.85rem; margin-bottom: 0.6rem; color: #1f3e48; border-left: 4px solid var(--b2-color); padding-left: 10px; }
+        .matching-table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.65rem; }
+        .matching-table th, .matching-table td { border: 1px solid #e2e9f0; padding: 6px 3px; text-align: center; vertical-align: middle; }
+        .matching-table th:first-child, .matching-table td:first-child { text-align: left; background: #fefaf0; font-weight: 600; }
+        .matching-table th { background: #f1f5f9; font-weight: 700; font-size: 0.65rem; }
+        .radio-cell input { width: 14px; height: 14px; cursor: pointer; accent-color: var(--b2-color); margin: 0; }
+        .two-choice-group { display: flex; flex-wrap: wrap; gap: 12px; margin: 10px 0; background: #fafcff; padding: 10px; border-radius: 20px; }
+        .two-choice-item { display: flex; align-items: center; gap: 8px; font-size: 0.68rem; width: calc(50% - 10px); }
+        .two-choice-item input { width: 14px; height: 14px; accent-color: var(--b2-color); margin: 0; cursor: pointer; }
+        .two-choice-item input:disabled { cursor: not-allowed; }
+        .two-choice-item label { cursor: pointer; font-size: 0.68rem; }
+        .summary-input { display: inline-block; width: 100px; margin: 0 3px; vertical-align: middle; }
+        .summary-input input { width: 100%; padding: 4px 6px; font-size: 0.65rem; border-radius: 30px; border: 1.5px solid #d0dae5; text-align: center; background: white; font-weight: 500; }
+        .btn-submit { background: var(--b2-color); color: white; border: none; padding: 8px 16px; border-radius: 40px; font-weight: 700; font-size: 0.7rem; cursor: pointer; width: 100%; transition: 0.2s; margin-top: 10px; box-shadow: 0 2px 6px rgba(44,156,110,0.2); }
+        .btn-submit:hover { background: #237d56; transform: scale(0.98); }
+        .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+        .score-area { background: linear-gradient(105deg, #1f3e48, #17323b); border-radius: 40px; padding: 8px 15px; margin-bottom: 18px; display: flex; justify-content: space-between; align-items: center; color: white; font-weight: 600; font-size: 0.75rem; }
+        .reset-quiz { background: rgba(255,255,245,0.2); border: none; color: white; border-radius: 40px; padding: 4px 12px; cursor: pointer; font-size: 0.65rem; transition: 0.2s; }
+        .reset-quiz:hover { background: rgba(255,255,245,0.35); }
+        .explanation-box { background: #eef2f9; border-radius: 14px; padding: 8px 12px; margin-top: 8px; border-left: 4px solid var(--b2-color); display: none; line-height: 1.5; font-size: 0.65rem; }
+        .explanation-box.show { display: block; }
+        .explanation-box .quote { background: #fff9e6; padding: 5px 8px; border-radius: 8px; margin: 5px 0; font-style: italic; border-left: 3px solid #e6b422; }
+        .explanation-box .correct-ans { color: #2c9c6e; font-weight: 700; }
+        .explanation-box .wrong-ans { color: #d45c8c; font-weight: 700; }
+        /* Synonym box */
+        .synonym-box { background: #e8f5ee; border-radius: 10px; padding: 6px 10px; margin: 6px 0; border-left: 3px solid #2c9c6e; font-size: 0.63rem; }
+        .synonym-box strong { color: #1e5f7a; }
+        .synonym-table { width: 100%; border-collapse: collapse; margin: 4px 0; font-size: 0.62rem; }
+        .synonym-table th { background: #d6ecdf; color: #1f3e48; padding: 3px 5px; text-align: left; font-weight: 700; border: 1px solid #c0dccb; }
+        .synonym-table td { padding: 3px 5px; border: 1px solid #c0dccb; vertical-align: top; }
+        .synonym-table td:first-child { background: #f6fcf9; font-weight: 600; color: #1f5f3e; width: 45%; }
+        hr { margin: 10px 0; border-color: #e2e9f0; }
+        @media (max-width: 950px) { .dashboard { flex-direction: column; } .reading-section, .quiz-section { width: 100%; height: auto; border-radius: 0; } body { overflow: auto; height: auto; } .dashboard { height: auto; } }
+    </style>
+</head>
+<body>
+<div class="dashboard">
+    <!-- LEFT: Reading passage (không highlight từ vựng) -->
+    <div class="reading-section">
+        <div style="text-align:center;">
+            <h1><i class="fas fa-bicycle"></i> The growth of bike-sharing schemes around the world</h1>
+            <div class="brand-group">
+                <a href="https://www.facebook.com/nvtielts/" class="brand-link" target="_blank"><i class="fas fa-graduation-cap"></i> Nguyễn Văn Thắng - Academic Hub</a>
+            </div>
+        </div>
+
+        <!-- FULL READING PASSAGE -->
+        <p><strong>A.</strong> The original idea for an urban bike-sharing scheme dates back to a summer's day in Amsterdam in 1965. Provo, the organisation that came up with the idea, was a group of Dutch activists who wanted to change society. They believed the scheme, which was known as the Witte Fietsenplan, was an answer to the perceived threats of air pollution and consumerism. In the centre of Amsterdam, they painted a small number of used bikes white. They also distributed leaflets describing the dangers of cars and inviting people to use the white bikes. The bikes were then left unlocked at various locations around the city, to be used by anyone in need of transport.</p>
+        <p><strong>B.</strong> Luud Schimmelpennink, a Dutch industrial engineer who still lives and cycles in Amsterdam, was heavily involved in the original scheme. He recalls how the scheme succeeded in attracting a great deal of attention — particularly when it came to publicising Provo's aims — but struggled to get off the ground. The police were opposed to Provo's initiatives and almost as soon as the white bikes were distributed around the city, they removed them. However, for Schimmelpennink and for bike-sharing schemes in general, this was just the beginning. ‘The first Witte Fietsenplan was just a symbolic thing," he says. "We painted a few bikes white, that was all. Things got more serious when I became a member of the Amsterdam city council two years later.”</p>
+        <p><strong>C.</strong> Schimmelpennink seized this opportunity to present a more elaborate Witte Fietsenplan to the city council. ‘My idea was that the municipality of Amsterdam would distribute 10,000 white bikes over the city, for everyone to use,” he explains. ‘I made serious calculations. It turned out that a white bicycle — per person, per kilometre — would cost the municipality only 10% of what it contributed to public transport per person per kilometre.’ Nevertheless, the council rejected the plan. ‘They said that the bicycle belongs to the past. They saw a glorious future for the car,’ says Schimmelpennink. But he was not in the least discouraged.</p>
+        <p><strong>D.</strong> Schimmelpennink never stopped believing in bike-sharing, and in the mid-90s, two Danes asked for his help to set up a system in Copenhagen. The result was the world's first large-scale bike-share programme. It worked on a deposit: ‘You dropped a coin in the bike and when you returned it, you got your money back.’ After setting up the Danish system, Schimmelpennink decided to try his luck again in the Netherlands — and this time he succeeded in arousing the interest of the Dutch Ministry of Transport. ‘Times had changed,’ he recalls. ‘People had become more environmentally conscious, and the Danish experiment had proved that bike-sharing was a real possibility.’ A new Witte Fietsenplan was launched in 1999 in Amsterdam. However, riding a white bike was no longer free; it cost one guilder per trip and payment was made with a chip card developed by the Dutch bank Postbank. Schimmelpennink designed conspicuous, sturdy white bikes locked in special racks which could be opened with the chip card — the plan started with 250 bikes, distributed over five stations.</p>
+        <p><strong>E.</strong> Theo Molenaar, who was a system designer for the project, worked alongside Schimmelpennink. ‘I remember when we were testing the bike racks, he announced that he had already designed better ones. But of course, we had to go through with the ones we had.’ The system, however, was prone to vandalism and theft. ‘After every weekend there would always be a couple of bikes missing,’ Molenaar says. ‘I really have no idea what people did with them, because they could instantly be recognised as white bikes.’ But the biggest blow came when Postbank decided to abolish the chip card, because it wasn't profitable. ‘That chip card was pivotal to the system,’ Molenaar says. ‘To continue the project we would have needed to set up another system, but the business partner had lost interest.’</p>
+        <p><strong>F.</strong> Schimmelpennink was disappointed, but — characteristically — not for long. In 2002 he got a call from the French advertising corporation JC Decaux, who wanted to set up his bike-sharing scheme in Vienna. ‘That went really well. After Vienna, they set up a system in Lyon. Then in 2007, Paris followed. That was a decisive moment in the history of bike-sharing.’ The huge and unexpected success of the Parisian bike-sharing programme, which now boasts more than 20,000 bicycles, inspired cities all over the world to set up their own schemes, all modelled on Schimmelpennink’s. ‘It's wonderful that this happened,’ he says. ‘But financially I didn't really benefit from it, because I never filed for a patent.’</p>
+        <p><strong>G.</strong> In Amsterdam today, 38% of all trips are made by bike and, along with Copenhagen, it is regarded as one of the two most cycle-friendly capitals in the world — but the city never got another Witte Fietsenplan. Molenaar believes this may be because everybody in Amsterdam already has a bike. Schimmelpennink, however, cannot see that this changes Amsterdam's need for a bike-sharing scheme. ‘People who travel on the underground don't carry their bikes around. But often they need additional transport to reach their final destination.’ Although he thinks it is strange that a city like Amsterdam does not have a successful bike- sharing scheme, he is optimistic about the future. ‘In the ‘60s we didn’t stand a chance because people were prepared to give their lives to keep cars in the city. But that mentality has totally changed. Today everybody longs for cities that are not dominated by cars.’</p>
+    </div>
+
+    <!-- RIGHT: IELTS Reading questions -->
+    <div class="quiz-section">
+        <div class="score-area">
+            <span><i class="fas fa-chart-line"></i> IELTS READING SCORE</span>
+            <span id="scoreDisplay">0 / 13</span>
+            <button class="reset-quiz" id="resetQuizBtn"><i class="fas fa-sync-alt"></i> Reset</button>
+        </div>
+        <div id="quiz-container"></div>
+    </div>
+</div>
+
+<script>
+    // ======================= IELTS QUIZ =======================
+    const correctMap = { q14: "E", q15: "C", q16: "F", q17: "C", q18: "A", correct19_20_list: ["D","B"], correct21_22_list: ["D","E"], q23: "activists", q24: "consumerism", q25: "leaflets", q26: "police" };
+    let user = { q14:"", q15:"", q16:"", q17:"", q18:"", q19:[], q20:[], q21:[], q22:[], q23:"", q24:"", q25:"", q26:"" };
+    let submitted = false;
+
+    function renderQuiz() {
+        const container = document.getElementById('quiz-container');
+        if (!container) return;
+        const sections = ['A','B','C','D','E','F','G'];
+        let matchHtml = `<div class="quiz-card"><div class="section-title">📍 Questions 14–18</div>
+        <div style="background:#f0f4fa; padding:8px; border-radius:16px; margin-bottom:12px; font-size:0.65rem;">
+            <strong>Reading Passage 2 has seven paragraphs, A–G.</strong><br>
+            Which paragraph contains the following information?<br>
+            Write the correct letter, A–G, in boxes 14–18 on your answer sheet.<br>
+            <em>NB You may use any letter more than once.</em>
+        </div>
+        <table class="matching-table"><thead><tr><th>Question</th>${sections.map(s => `<th>${s}</th>`).join('')}</tr></thead><tbody>`;
+        const qList = [
+            { num: 14, text: "a description of how people misused a bike-sharing scheme" },
+            { num: 15, text: "an explanation of why a proposed bike-sharing scheme was turned down" },
+            { num: 16, text: "a reference to a person being unable to profit from their work" },
+            { num: 17, text: "an explanation of the potential savings a bike-sharing scheme would bring" },
+            { num: 18, text: "a reference to the problems a bike-sharing scheme was intended to solve" }
+        ];
+        for (let q of qList) {
+            matchHtml += `<tr><td class="question-cell"><strong>${q.num}.</strong> ${q.text}</td>`;
+            for (let s of sections) {
+                const checked = (user[`q${q.num}`] === s);
+                matchHtml += `<td class="radio-cell"><input type="radio" name="q${q.num}" value="${s}" ${checked ? 'checked' : ''} ${submitted ? 'disabled' : ''}></td>`;
+            }
+            matchHtml += `</tr>`;
+        }
+        matchHtml += `</tbody></table>`;
+        for (let q of qList) matchHtml += `<div id="exp-${q.num}" class="explanation-box"></div>`;
+        matchHtml += `</div>`;
+
+        // Questions 19-20
+        let mcHtml = `<div class="quiz-card"><div class="section-title">🔁 Questions 19 & 20 (Choose TWO)</div>
+        <div style="background:#f0f4fa; padding:8px; border-radius:16px; font-size:0.65rem;">Which TWO statements are made about the Amsterdam bike-sharing scheme of 1999?</div>
+        <div class="two-choice-group" id="group19">`;
+        const opts19 = [{ val:"A", text:"It was initially opposed by a government department."},{ val:"B", text:"It failed when a partner in the scheme withdrew support."},{ val:"C", text:"It aimed to be more successful than the Copenhagen scheme."},{ val:"D", text:"It was made possible by a change in people's attitudes."},{ val:"E", text:"It attracted interest from a range of bike designers."}];
+        opts19.forEach(opt => { const checked = user.q19.includes(opt.val); mcHtml += `<div class="two-choice-item"><input type="checkbox" value="${opt.val}" data-group="q19" id="mc19_${opt.val}" ${checked ? 'checked' : ''} ${submitted ? 'disabled' : ''}> <label for="mc19_${opt.val}">${opt.val}. ${opt.text}</label></div>`; });
+        mcHtml += `</div><div id="exp-19-20" class="explanation-box"></div></div>`;
+
+        // Questions 21-22
+        let mcHtml2 = `<div class="quiz-card"><div class="section-title">🚲 Questions 21 & 22 (Choose TWO)</div>
+        <div style="background:#f0f4fa; padding:8px; border-radius:16px; font-size:0.65rem;">Which TWO statements are made about Amsterdam today?</div>
+        <div class="two-choice-group" id="group21">`;
+        const opts21 = [{ val:"A", text:"The majority of residents would like to prevent all cars from entering the city."},{ val:"B", text:"There is little likelihood of the city having another bike-sharing scheme."},{ val:"C", text:"More trips in the city are made by bike than by any other form of transport."},{ val:"D", text:"A bike-sharing scheme would benefit residents who use public transport."},{ val:"E", text:"The city has a reputation as a place that welcomes cyclists."}];
+        opts21.forEach(opt => { const checked = user.q21.includes(opt.val); mcHtml2 += `<div class="two-choice-item"><input type="checkbox" value="${opt.val}" data-group="q21" id="mc21_${opt.val}" ${checked ? 'checked' : ''} ${submitted ? 'disabled' : ''}> <label for="mc21_${opt.val}">${opt.val}. ${opt.text}</label></div>`; });
+        mcHtml2 += `</div><div id="exp-21-22" class="explanation-box"></div></div>`;
+
+        // Questions 23-26 (Summary)
+        let summaryHtml = `<div class="quiz-card"><div class="section-title">📝 Questions 23–26</div>
+        <div style="background:#f0f4fa; padding:8px; border-radius:16px; margin-bottom:12px; font-size:0.65rem;">
+            Complete the summary below.<br>
+            Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.<br>
+            Write your answers in boxes 23–26 on your answer sheet.
+        </div>
+        <div style="text-align:center; font-weight:700; margin:10px 0; font-size:0.8rem;">The first urban bike-sharing scheme</div>
+        <div style="font-size:0.68rem; line-height:1.6;">
+            The first bike-sharing scheme was the idea of the Dutch group Provo. The people who belonged to this group were <span class="summary-input"><input type="text" id="inp-23" placeholder="23" ${submitted ? 'disabled' : ''} value="${user.q23}"></span>. They were concerned about damage to the environment and about <span class="summary-input"><input type="text" id="inp-24" placeholder="24" ${submitted ? 'disabled' : ''} value="${user.q24}"></span>, and believed that the bike-sharing scheme would draw attention to these issues. As well as painting some bikes white, they handed out <span class="summary-input"><input type="text" id="inp-25" placeholder="25" ${submitted ? 'disabled' : ''} value="${user.q25}"></span> that condemned the use of cars.<br><br>
+            However, the scheme was not a great success: almost as quickly as Provo left the bikes around the city, the <span class="summary-input"><input type="text" id="inp-26" placeholder="26" ${submitted ? 'disabled' : ''} value="${user.q26}"></span> took them away. According to Schimmelpennink, the scheme was intended to be symbolic. The idea was to get people thinking about the issues.
+        </div>
+        <div id="exp-summary" class="explanation-box"></div></div>`;
+
+        container.innerHTML = matchHtml + mcHtml + mcHtml2 + summaryHtml + `<button id="submitBtn" class="btn-submit" ${submitted ? 'disabled' : ''}>✅ Check Answers & Show Explanations</button>`;
+        if (!submitted) {
+            for (let i=14; i<=18; i++) document.querySelectorAll(`input[name="q${i}"]`).forEach(r => r.addEventListener('change', (e) => { if(e.target.checked) user[`q${i}`] = e.target.value; }));
+            const checkboxes19 = document.querySelectorAll('input[data-group="q19"]');
+            const checkboxes21 = document.querySelectorAll('input[data-group="q21"]');
+            const attachLimit = (groupCheckboxes, userArray, maxSel=2) => { groupCheckboxes.forEach(cb => cb.addEventListener('change', () => { const checked = Array.from(groupCheckboxes).filter(c => c.checked).map(c => c.value); if(checked.length > maxSel){ cb.checked=false; alert(`Select max ${maxSel}`); return; } if(userArray === user.q19) user.q19 = checked; else user.q21 = checked; })); };
+            attachLimit(checkboxes19, user.q19, 2); attachLimit(checkboxes21, user.q21, 2);
+            const updateFromUser = () => { checkboxes19.forEach(cb => cb.checked = user.q19.includes(cb.value)); checkboxes21.forEach(cb => cb.checked = user.q21.includes(cb.value)); };
+            updateFromUser();
+            for(let i=23;i<=26;i++) document.getElementById(`inp-${i}`)?.addEventListener('input', (e) => { user[`q${i}`] = e.target.value.trim().toLowerCase(); });
+            document.getElementById('submitBtn')?.addEventListener('click', evaluateQuiz);
+        } else evaluateQuiz();
+    }
+
+    // ============ HÀM TẠO GIẢI THÍCH CHI TIẾT (đã thêm Synonym/Paraphrase) ============
+    function getDetailedExplanation(i, userAns, correctAns) {
+        const explanations = {
+            14: {
+                title: "a description of how people misused a bike-sharing scheme",
+                para: "E",
+                quote: "'After every weekend there would always be a couple of bikes missing,' Molenaar says. 'I really have no idea what people did with them, because they could instantly be recognised as white bikes.'",
+                analysis: "Đoạn E mô tả việc người dùng lạm dụng hệ thống: xe bị mất, bị phá hoại (vandalism) và trộm cắp (theft). Cụm 'a couple of bikes missing' và 'no idea what people did with them' cho thấy sự lạm dụng/misuse.",
+                synonyms: [
+                    ["misused", "vandalism and theft; bikes missing; no idea what people did with them"],
+                    ["a bike-sharing scheme", "the system (the Witte Fietsenplan / white bikes)"],
+                    ["description", "Molenaar describes / recalls ('After every weekend...')"]
+                ]
+            },
+            15: {
+                title: "an explanation of why a proposed bike-sharing scheme was turned down",
+                para: "C",
+                quote: "'Nevertheless, the council rejected the plan. They said that the bicycle belongs to the past. They saw a glorious future for the car.'",
+                analysis: "Đoạn C giải thích lý do kế hoạch bị từ chối: hội đồng thành phố (council) cho rằng xe đạp thuộc về quá khứ và tương lai thuộc về ô tô. Từ khóa 'rejected the plan' + lý do cụ thể.",
+                synonyms: [
+                    ["a proposed bike-sharing scheme", "a more elaborate Witte Fietsenplan (the plan Schimmelpennink presented to the city council)"],
+                    ["was turned down", "rejected the plan"],
+                    ["an explanation of why", "'They said that the bicycle belongs to the past. They saw a glorious future for the car.'"]
+                ]
+            },
+            16: {
+                title: "a reference to a person being unable to profit from their work",
+                para: "F",
+                quote: "'But financially I didn't really benefit from it, because I never filed for a patent.'",
+                analysis: "Đoạn F đề cập Schimmelpennink không thu được lợi nhuận tài chính vì không nộp đơn xin bằng sáng chế. 'didn't really benefit' + 'never filed for a patent' = không thể kiếm lời từ công việc của mình.",
+                synonyms: [
+                    ["unable to profit", "financially I didn't really benefit"],
+                    ["their work", "the bike-sharing scheme he designed / it"],
+                    ["a person", "Schimmelpennink"]
+                ]
+            },
+            17: {
+                title: "an explanation of the potential savings a bike-sharing scheme would bring",
+                para: "C",
+                quote: "'It turned out that a white bicycle — per person, per kilometre — would cost the municipality only 10% of what it contributed to public transport per person per kilometre.'",
+                analysis: "Đoạn C giải thích tiềm năng tiết kiệm: xe đạp trắng chỉ tốn 10% so với chi phí giao thông công cộng. Từ khóa 'cost... only 10%' = tiết kiệm 90%.",
+                synonyms: [
+                    ["potential savings", "would cost the municipality only 10% (so saving 90%)"],
+                    ["a bike-sharing scheme", "a white bicycle / the Witte Fietsenplan"],
+                    ["an explanation of", "Schimmelpennink made serious calculations / 'It turned out that...'"]
+                ]
+            },
+            18: {
+                title: "a reference to the problems a bike-sharing scheme was intended to solve",
+                para: "A",
+                quote: "'They believed the scheme... was an answer to the perceived threats of air pollution and consumerism.'",
+                analysis: "Đoạn A nêu vấn đề mà kế hoạch nhằm giải quyết: ô nhiễm không khí (air pollution) và chủ nghĩa tiêu dùng (consumerism). Cụm 'an answer to the perceived threats' = giải pháp cho các vấn đề.",
+                synonyms: [
+                    ["problems", "perceived threats"],
+                    ["was intended to solve", "was an answer to"],
+                    ["a bike-sharing scheme", "the scheme / the Witte Fietsenplan"]
+                ]
+            }
+        };
+        const e = explanations[i];
+        const isCorrect = userAns === correctAns;
+        const synRows = e.synonyms.map(s => `<tr><td>${s[0]}</td><td>${s[1]}</td></tr>`).join('');
+        return `<strong>${isCorrect ? '✅ Correct' : '❌ Incorrect'}</strong><br>
+        <span class="${isCorrect ? 'correct-ans' : 'wrong-ans'}">Your answer: ${userAns || 'none'} | Correct answer: ${correctAns}</span><br><br>
+        <strong>📖 Detailed Explanation:</strong><br>
+        <strong>Question ${i}:</strong> "${e.title}"<br>
+        <strong>📍 Location:</strong> Paragraph ${e.para}<br>
+        <div class="quote">"${e.quote}"</div>
+        <strong>🔍 Analysis:</strong> ${e.analysis}<br><br>
+        <div class="synonym-box">
+            <strong>🔄 Synonym / Paraphrase (Question ↔ Passage):</strong>
+            <table class="synonym-table">
+                <tr><th>Câu hỏi (Question)</th><th>Đoạn văn (Passage)</th></tr>
+                ${synRows}
+            </table>
+        </div>`;
+    }
+
+    function getDetailedExplanation1920(userAns) {
+        const user19 = userAns || [];
+        const score = user19.filter(c => correctMap.correct19_20_list.includes(c)).length;
+        const isCorrect = score === 2;
+        const isPartial = score === 1;
+        return `<strong>${isCorrect ? '✅ Perfect' : isPartial ? '⚠️ Partial' : '❌ Incorrect'}</strong><br>
+        <span class="${isCorrect ? 'correct-ans' : 'wrong-ans'}">Your answers: ${user19.join(', ') || 'none'} | Correct answers: D and B</span><br>
+        Score: ${score}/2<br><br>
+        <strong>📖 Detailed Explanation:</strong><br>
+        <strong>✅ D. It was made possible by a change in people's attitudes.</strong><br>
+        <div class="quote">"Times had changed... People had become more environmentally conscious, and the Danish experiment had proved that bike-sharing was a real possibility." (Paragraph D)</div>
+        → Sự thay đổi thái độ của người dân (environmentally conscious) là điều kiện tiên quyết để kế hoạch 1999 thành công.<br>
+        <div class="synonym-box">
+            <strong>🔄 Synonym / Paraphrase:</strong>
+            <table class="synonym-table">
+                <tr><th>Question</th><th>Passage</th></tr>
+                <tr><td>made possible</td><td>succeeded in arousing the interest / was launched (thanks to the changed times)</td></tr>
+                <tr><td>a change in people's attitudes</td><td>"Times had changed... People had become more environmentally conscious"</td></tr>
+            </table>
+        </div><br>
+        <strong>✅ B. It failed when a partner in the scheme withdrew support.</strong><br>
+        <div class="quote">"But the biggest blow came when Postbank decided to abolish the chip card... the business partner had lost interest." (Paragraph E)</div>
+        → Đối tác kinh doanh (Postbank) rút lui (lost interest) là nguyên nhân thất bại.<br>
+        <div class="synonym-box">
+            <strong>🔄 Synonym / Paraphrase:</strong>
+            <table class="synonym-table">
+                <tr><th>Question</th><th>Passage</th></tr>
+                <tr><td>failed</td><td>"the biggest blow" / "To continue the project we would have needed to set up another system" (i.e. could not continue)</td></tr>
+                <tr><td>a partner in the scheme</td><td>Postbank / "the business partner"</td></tr>
+                <tr><td>withdrew support</td><td>"decided to abolish the chip card" / "had lost interest"</td></tr>
+            </table>
+        </div><br>
+        <strong>❌ Tại sao A, C, E sai:</strong><br>
+        • A: Không có bằng chứng "government department" phản đối năm 1999 (chỉ có police phản đối năm 1965).<br>
+        • C: Không có mục tiêu "more successful than Copenhagen".<br>
+        • E: Không đề cập "range of bike designers".`;
+    }
+
+    function getDetailedExplanation2122(userAns) {
+        const user21 = userAns || [];
+        const score = user21.filter(c => correctMap.correct21_22_list.includes(c)).length;
+        const isCorrect = score === 2;
+        const isPartial = score === 1;
+        return `<strong>${isCorrect ? '✅ Perfect' : isPartial ? '⚠️ Partial' : '❌ Incorrect'}</strong><br>
+        <span class="${isCorrect ? 'correct-ans' : 'wrong-ans'}">Your answers: ${user21.join(', ') || 'none'} | Correct answers: D and E</span><br>
+        Score: ${score}/2<br><br>
+        <strong>📖 Detailed Explanation:</strong><br>
+        <strong>✅ D. A bike-sharing scheme would benefit residents who use public transport.</strong><br>
+        <div class="quote">"People who travel on the underground don't carry their bikes around. But often they need additional transport to reach their final destination." (Paragraph G)</div>
+        → Người dùng giao thông công cộng (underground) cần phương tiện bổ sung → bike-sharing sẽ có ích.<br>
+        <div class="synonym-box">
+            <strong>🔄 Synonym / Paraphrase:</strong>
+            <table class="synonym-table">
+                <tr><th>Question</th><th>Passage</th></tr>
+                <tr><td>benefit</td><td>"need additional transport to reach their final destination" (bike-sharing would provide it)</td></tr>
+                <tr><td>residents who use public transport</td><td>"People who travel on the underground"</td></tr>
+            </table>
+        </div><br>
+        <strong>✅ E. The city has a reputation as a place that welcomes cyclists.</strong><br>
+        <div class="quote">"it is regarded as one of the two most cycle-friendly capitals in the world" (Paragraph G)</div>
+        → "cycle-friendly" = thân thiện với người đi xe đạp = reputation.<br>
+        <div class="synonym-box">
+            <strong>🔄 Synonym / Paraphrase:</strong>
+            <table class="synonym-table">
+                <tr><th>Question</th><th>Passage</th></tr>
+                <tr><td>has a reputation as</td><td>"is regarded as"</td></tr>
+                <tr><td>a place that welcomes cyclists</td><td>"one of the two most cycle-friendly capitals"</td></tr>
+            </table>
+        </div><br>
+        <strong>❌ Tại sao A, B, C sai:</strong><br>
+        • A: Không có bằng chứng "majority of residents would like to prevent all cars" (chỉ nói mentality thay đổi, không nói số đông muốn cấm xe).<br>
+        • B: Molenaar tin rằng "little likelihood" nhưng Schimmelpennink KHÔNG đồng ý và vẫn lạc quan → không phải thông tin chính xác.<br>
+        • C: Bài chỉ nói 38% trips bằng xe đạp, KHÔNG nói đây là phương tiện được dùng nhiều nhất.`;
+    }
+
+    function getDetailedExplanationSummary(userAns) {
+        const items = [
+            { num: 23, corr: "activists", quote: "Provo... was a group of Dutch activists who wanted to change society. (Paragraph A)", 
+              analysis: "Từ khóa 'The people who belonged to this group' → 'activists' (những nhà hoạt động). Đây là danh từ số nhiều chỉ người trong nhóm Provo.",
+              syns: [["The people who belonged to this group", "a group of Dutch activists"], ["were", "who wanted to change society"]] },
+            { num: 24, corr: "consumerism", quote: "They believed the scheme... was an answer to the perceived threats of air pollution and consumerism. (Paragraph A)",
+              analysis: "Cần tìm vấn đề môi trường mà Provo lo ngại. Đoạn A nêu rõ 'air pollution and consumerism'. Vì 'damage to the environment' đã tương ứng với 'air pollution', nên đáp án là 'consumerism'.",
+              syns: [["concerned about damage to the environment", "perceived threats of air pollution"], ["and about ___", "and consumerism"]] },
+            { num: 25, corr: "leaflets", quote: "They also distributed leaflets describing the dangers of cars and inviting people to use the white bikes. (Paragraph A)",
+              analysis: "Cụm 'handed out' = 'distributed', và vật được phân phát là 'leaflets' (tờ rơi) mô tả nguy hiểm của ô tô → khớp với 'that condemned the use of cars'.",
+              syns: [["handed out", "distributed"], ["condemned the use of cars", "describing the dangers of cars"]] },
+            { num: 26, corr: "police", quote: "The police were opposed to Provo's initiatives and almost as soon as the white bikes were distributed around the city, they removed them. (Paragraph B)",
+              analysis: "Cần tìm chủ thể 'took them away' (lấy xe đi). Đoạn B nêu rõ 'The police... almost as soon as the white bikes were distributed... they removed them' → 'removed' = 'took away', chủ thể là 'police'.",
+              syns: [["took them away", "removed them"], ["almost as quickly as Provo left the bikes around the city", "almost as soon as the white bikes were distributed around the city"]] }
+        ];
+        let html = `<strong>📋 Summary Results</strong><br>`;
+        let correctCount = 0;
+        items.forEach(item => {
+            const ans = (userAns[`q${item.num}`] || "").toLowerCase();
+            const ok = ans === item.corr;
+            if (ok) correctCount++;
+            html += `<p><strong>${item.num}.</strong> <span class="${ok ? 'correct-ans' : 'wrong-ans'}">Your: "${ans || 'blank'}" ${ok ? '✓' : '✗ (correct: ' + item.corr + ')'}</span></p>`;
+            html += `<div class="quote">"${item.quote}"</div>`;
+            html += `<div style="margin: 4px 0 6px 0;"><strong>🔍 Analysis:</strong> ${item.analysis}</div>`;
+            html += `<div class="synonym-box">
+                <strong>🔄 Synonym / Paraphrase (Summary ↔ Passage):</strong>
+                <table class="synonym-table">
+                    <tr><th>Summary</th><th>Passage</th></tr>
+                    ${item.syns.map(s => `<tr><td>${s[0]}</td><td>${s[1]}</td></tr>`).join('')}
+                </table>
+            </div>`;
+        });
+        html += `<strong>Score: ${correctCount}/4</strong>`;
+        return html;
+    }
+
+    function evaluateQuiz() {
+        submitted = true;
+        let total = 0;
+        // Q14-18
+        for (let i=14; i<=18; i++) {
+            const ok = (user[`q${i}`] === correctMap[`q${i}`]);
+            if(ok) total++;
+            const expDiv = document.getElementById(`exp-${i}`);
+            if(expDiv){
+                expDiv.innerHTML = getDetailedExplanation(i, user[`q${i}`], correctMap[`q${i}`]);
+                expDiv.classList.add('show');
+            }
+        }
+        // Q19-20
+        const user19 = user.q19||[];
+        const score19 = user19.filter(c => correctMap.correct19_20_list.includes(c)).length;
+        total += score19;
+        const exp1920 = document.getElementById('exp-19-20');
+        if(exp1920){
+            exp1920.innerHTML = getDetailedExplanation1920(user19);
+            exp1920.classList.add('show');
+        }
+        // Q21-22
+        const user21 = user.q21||[];
+        const score21 = user21.filter(c => correctMap.correct21_22_list.includes(c)).length;
+        total += score21;
+        const exp2122 = document.getElementById('exp-21-22');
+        if(exp2122){
+            exp2122.innerHTML = getDetailedExplanation2122(user21);
+            exp2122.classList.add('show');
+        }
+        // Q23-26
+        let sumCorrect = 0;
+        for(let i=23;i<=26;i++){
+            if((user[`q${i}`]||"") === correctMap[`q${i}`]) sumCorrect++;
+        }
+        total += sumCorrect;
+        const sumExp = document.getElementById('exp-summary');
+        if(sumExp){
+            sumExp.innerHTML = getDetailedExplanationSummary(user);
+            sumExp.classList.add('show');
+        }
+        document.getElementById('scoreDisplay').innerText = `${total} / 13`;
+        document.querySelectorAll('input, select, button').forEach(el => { if(el.id !== 'resetQuizBtn') el.disabled = true; });
+        const sb = document.getElementById('submitBtn'); if(sb) sb.disabled = true;
+    }
+
+    function resetAll() {
+        user = { q14:"",q15:"",q16:"",q17:"",q18:"", q19:[],q20:[], q21:[],q22:[], q23:"",q24:"",q25:"",q26:"" };
+        submitted = false;
+        renderQuiz();
+        document.getElementById('scoreDisplay').innerText = "0 / 13";
+    }
+    document.getElementById('resetQuizBtn').addEventListener('click', resetAll);
+    renderQuiz();
+</script>
+</body>
+</html>
